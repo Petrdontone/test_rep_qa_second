@@ -92,5 +92,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Проверять доступность гугл ком
-        run: curl -v google.com
+        run: curl -v google1111111.com
 
