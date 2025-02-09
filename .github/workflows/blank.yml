@@ -84,3 +84,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+
+  check_google_com:
+    runs-on: ubuntu-latest
+    needs: four_job
+    steps:
+      - uses: actions/checkout@v4
+      - name: Проверять доступность гугл ком
+        run: curl -v google.com
+
